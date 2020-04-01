@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasks2leson</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    // --створити масив та вивести його в консоль:
+    // - з 5 числових значень
+    // - з 5 стічкових значень
+    // - з 5 значень стрічкового, числового та булевого типу
+    // let arr = [];
+    // arr.push(5, 6, 9, 1, 4, 6, 'text1', 'text2', 'text3', 'text4',
+    //     'text5', bylyaTrue = true, bylyaFal = false, some1 = true, some2 = false, some = true);
+    // console.log(arr);
+
+
+    // -- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
+    // let arr = [];
+    // arr[0] = 1;
+    // arr[2] = 1;
+    // arr[3] = 1;
+    // arr[5] = 1;
+    // arr[8] = 1;
+    // arr[10] = 1;
+    // arr[56] = 1;
+    // console.log(arr);
+
+
+    // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+    // for (let i = 0; i < 10; i++) {
+    //     document.write('<div><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ratione? </p></div><br>');
+    // };
+
+    // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
+    // for (let i = 1; i < 11; i++) {
+    //     document.write(`<div><p>${i} Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ratione? </p></div><br>`);
+    // };
+
+    // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+    // let result = ('<div><h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ratione? </h1></div><br>'),
+    //     i = 0;
+    // do {
+    //     i = i + 1;
+    //     document.write(`${result}`);
+    // } while (i < 10);
+
+    // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+    // let result = ('<div><h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ratione? </h1></div><hr>'),
+    //     i = 0;
+    // do {
+    //     i = i + 1;
+    //     document.write(`${i}${result}`);
+    // } while (i < 10);
+
+    // - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+    // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    // for (let i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);
+    // }
+
+    // - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
+    // let arr = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+    // for (let i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);
+    // }
+
+    // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+    // let arr = ['1', true, 3, '4', false, '6', 55, '8', 99, '10'];
+    // for (let i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);
+    // }
+
+    // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
+    // let arr = ['1', q = true, 3, '4', h = false, '6', 55, '8', 99, '10'];
+    // for (let i = 0; i < arr.length; i++) {
+    //     let a = typeof arr[i],
+    //         b = typeof arr[1];
+    //     if (a === b) {
+    //         console.log(arr[i]);
+    //     }
+    //     else if (a === c) {
+    //     console.log(arr[i]);
+    //  }
+    // };
+
+
+    // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
+    // let arr = ['1', q = true, 3, '4', h = false, '6', 55, '8', 99, '10'];
+    // for (let i = 0; i < arr.length; i++) {
+    //     let a = typeof arr[i],
+    //         b = typeof arr[1],
+    //         c = typeof arr[0];
+    //     if (a === b) {
+    //         console.log(arr[i]);
+    //     }
+    //     else if (a === c) {
+    //         console.log(arr[i]);
+    //     }
+    // };
+
+    // - Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
+    // let arr = ['1', q = true, 3, '4', h = false, '6', 55, '8', 99, '10'];
+    // for (let i = 0; i < arr.length; i++) {
+    //     let a = typeof arr[i],
+    //         b = typeof arr[1],
+    //         c = typeof arr[2];
+    //     if (a === b) {
+    //         console.log(arr[i]);
+    //     }
+    //     else if (a === c) {
+    //         console.log(arr[i]);
+    //     }
+    // };
+
+    // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення 
+    // до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+    // let arr = [];
+    // arr.push(5, 6, 9, 1, 4, 6, 'text1', 'text2', 'text3', 'text4',
+    //     'text5', bylyaTrue = true, bylyaFal = false, some1 = true, some2 = false, some = true);
+    // for (i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);
+    // }
+
+    // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+    // for (i = 1; i < 11; i++) {
+    //     console.log(i);
+    //     document.write(i)
+    // }
+
+    // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+    // for (i = 1; i < 101; i++) {
+    //     console.log(i);
+    //     document.write(i)
+    // }
+
+    // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+    // for (i = 2; i < 200; i = i + 2) {
+    //     console.log(i);
+    //     document.write(i)
+    // }
+
+    // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+    // for (i = 1; i < 101; i++) {
+    //     if (i % 2 == 0) {
+    //         console.log(i);
+    //         document.write(i)
+    //     }
+    // }
+
+    // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+    // for (i = 1; i < 101; i++) {
+    //     if (i % 2 == 1) {
+    //         console.log(i);
+    //         document.write(i)
+    //     }
+    // }
+
+    // - Відтворити роботу годинника, відрахувавши 2 хвилини (2 цикли! 1й - хвилини, 2й - секунди)
+    // for (hv = 0; hv <= 2; hv++) {
+    //     for (sec = 1; sec < 61; sec++) {
+    //         document.write(`${hv} : ${sec} <br>`)
+    //     }
+    // }
+
+    // - Відтворити роботу годинника, відрахувавши  2 години 20 хвилини (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
+    // for (god = 0; god <= 2; god++) {
+    //     for (hv = 0; hv < 61; hv++) {
+    //         for (sec = 1; sec < 61; sec++) {
+    //             document.write(`${god} : ${hv} : ${sec} <br>`)
+    //         }
+    //         if ((god == 2) && (hv === 20)) break;
+    //     }
+
+    // }
+
+
+    // Додатково
+    // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+    // let arr = ['a', 'b', 'c'];
+    // for (i = 0; i < arr.length; i++) {
+    //     document.write(arr[i])
+    // }
+
+    // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+    // let arr = ['a', 'b', 'c'],
+    //     i = 0;
+    // while (i < arr.length) {
+    //     document.write(arr[i]);
+    //     i++;
+    // }
+
+    // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+    // let arr = ['a', 'b', 'c'];
+    // for (let element of arr) {
+    //     document.write(element);
+    // }
+    // =================
+    // =================
+    // =================
+    // =================
+
+    // - Дан масив ['a', 'b', 'c']. Додайте йому в кінець елементи 1, 2, 3 за допомогою циклу.
+    // let arr = ['a', 'b', 'c'];
+    // for (i = 1; i < 4; i++) {
+    //     arr.push(i);
+    // }
+    // console.log(arr);
+
+    // - Дан масив [1, 2, 3]. Зробіть з нього новий масив [3, 2, 1].
+    // let arr = [1, 2, 3];
+    // let x = arr.reverse();
+    // console.log(x);
+
+    // - Дан масив [1, 2, 3]. Додайте йому в кінець елементи 4, 5, 6.
+    // let arr = [1, 2, 3];
+    // for (i = 4; i <= 6; i++) {
+    //     arr.push(i);
+    // }
+    // console.log(arr);
+
+    // - Дан масив [1, 2, 3]. Додайте йому в початок елементи 4, 5, 6.
+    // let arr = [1, 2, 3];
+    // for (i = 6; i >= 4; i--) {
+    //     arr.unshift(i);
+    // }
+    // console.log(arr);
+
+    // - Дан масив ['js', 'css', 'jq']. Виведіть на екран перший елемент за допомогою shift()
+    // let arr = ['js', 'css', 'jq'],
+    //     deleteElement = arr.shift();
+    // document.write(deleteElement);
+
+    // - Дан масив ['js', 'css', 'jq']. Виведіть на екран останній елемент за допомогою pop()
+    // let arr = ['js', 'css', 'jq'],
+    //     deleteElement = arr.pop();
+    // document.write(deleteElement);
+
+    // - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції slice перетворіть масив в [1, 4, 5].
+    // let arr = [1, 2, 3, 4, 5];
+    // arr.splice(1, 2);
+    // console.log(arr);
+
+    // - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції slice перетворіть масив в [4, 5].
+    // let arr = [1, 2, 3, 4, 5];
+    // console.log(arr.slice(3, 5));
+
+
+    // - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції slice перетворіть масив в [1,2].
+    // let arr = [1, 2, 3, 4, 5];
+    // console.log(arr.slice(0, 2));
+
+    // - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice зробіть з нього масив [1, 2, 3, 'a', 'b', 'c', 4, 5].
+    // let arr2 = [1, 2, 3, 4, 5];
+    // arr2.splice(3, 0, 'a', 'b', 'c');
+    // console.log(arr2);
+
+    // - Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice зробіть з нього масив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
+    // let arr2 = [1, 2, 3, 4, 5];
+    // arr2.splice(1, 0, 'a', 'b');
+    // arr2.splice(6, 0, 'c');
+    // arr2.splice(8, 0, 'e');
+    // console.log(arr2);
+
+    // - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
+    // let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    // for (let i of arr) {
+    //     if (i % 2 == 0) {
+    //         console.log(i);
+    //         document.write(`${i} <br>`)
+    //     }
+    // }
+
+    // - Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. 
+    // За допомогою будь-якого циклу та push () скопіювати значення одного масиву в інший
+    // let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    // let arr1 = [];
+    // for (let i of arr) {
+    //     arr1.push(i);
+    // }
+    // console.log(arr1);
+
+    // - Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. 
+    // За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
+    // let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    // let arr1 = [];
+    // for (let i of arr) {
+    //     arr1.unshift(i);
+    // }
+    // console.log(arr1);
+
+    // let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    // let arr1 = [];
+    // let shallowCopy = arr.slice();
+    // arr1 = shallowCopy;
+    // console.log(arr1);
+
+
+    // ============
+
+    // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+    // для отримання результату всіх завдань від 1 по 9 
+    // розкоментувати все крім 8
+    // let arrResult = []
+    // // 1. перебрати його циклом while
+    // function res1() {
+    //     let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    //     let i = 0,
+    //         a = [];
+    //     while (i < arr.length) {
+    //         // console.log(arr[i]);
+    //         a.push(arr[i]);
+    //         i++;
+    //     }
+    //     return a;
+    // }
+    // let result1 = new res1();
+    // arrResult.push(result1);
+    // console.log(result1);
+
+    // // 2. перебрати його циклом for
+    // function res2() {
+    //     let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18],
+    //         a = [];
+    //     for (i = 0; i < arr.length; i++) {
+    //         // console.log(arr[i]);
+    //         a.push(arr[i]);
+    //     }
+    //     return a;
+    // }
+    // let result2 = new res2();
+    // arrResult.push(result2);
+    // console.log(result2);
+
+    // // 3. перебрати циклом while та вивести  числа тільки з непарним індексом
+    // function res3() {
+    //     let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    //     let i = 0,
+    //         a = [];
+    //     while (i < arr.length) {
+    //         if (i % 2 !== 0) {
+    //             // console.log(arr[i]);
+    //             a.push(arr[i]);
+    //         }
+    //         i++
+    //     }
+    //     return a;
+    // }
+    // let result3 = new res3();
+    // arrResult.push(result3);
+    // console.log(result3);
+
+
+    // // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+    // function res4() {
+    //     let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    //     a = [];
+    //     for (i = 0; i < arr.length; i++) {
+    //         if (i % 2 !== 0) {
+    //             // console.log(arr[i]);
+    //             a.push(arr[i]);
+    //         }
+    //     }
+    //     return a;
+    // }
+    // let result4 = new res4();
+    // arrResult.push(result4);
+    // console.log(result4);
+
+    // // 5. перебрати циклом while та вивести  числа тільки парні  значення
+    // function res5() {
+    //     let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    //     let i = 0,
+    //         a = [];
+    //     while (i < arr.length) {
+    //         if (arr[i] % 2 == 0) {
+    //             // console.log(arr[i]);
+    //             a.push(arr[i]);
+    //         }
+    //         i++
+    //     }
+    //     return a;
+    // }
+    // let result5 = new res5();
+    // arrResult.push(result5);
+    // console.log(result5);
+
+    // // 6. перебрати циклом for та вивести  числа тільки парні  значення
+    // function res6() {
+    //     let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    //     a = [];
+    //     for (i = 0; i < arr.length; i++) {
+    //         if (arr[i] % 2 == 0) {
+    //             // console.log(arr[i]);
+    //             a.push(arr[i]);
+    //         }
+    //     }
+    //     return a;
+    // }
+    // let result6 = new res6();
+    // arrResult.push(result6);
+    // console.log(result6);
+
+    // // 7. замінити кожне число кратне 3 на слово "okten" 
+    // function res7() {
+    //     let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    //     for (i = 0; i < arr.length; i++) {
+    //         if (arr[i] % 3 == 0) {
+    //             arr.splice(i, 1, 'okten')
+    //         }
+    //     }
+    //     // console.log(arr);
+    //     return arr;
+    // }
+    // let result7 = new res7();
+    // arrResult.push(result7);
+    // console.log(result7);
+
+
+    // // 8. вивести масив в зворотньому порядку.
+    // // let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    // // let x = arr.reverse();
+    // // console.log(x);
+
+    // // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+    // let x = arrResult.reverse();
+    // console.log(x);
+
+    // 10
+    //  створити пустий масив та :
+    // let arr = [];
+    // // - заповнити його 50 парними числами за допомоги циклу.
+    // for (i = 1; i < 51; i++) {
+    //     arr.push(i * 2);
+    // }
+    // console.log(arr)
+    // - заповнити його 50 непарними числами за допомоги циклу.
+    // for (i = 1; i < 51; i++) {
+    //     arr.push(i * 2 + 1);
+    // }
+    // console.log(arr)
+
+
+    // 1
+    //  створити пустий масив та :
+    // 1. заповнити його 50 парними числами за допомоги циклу.
+    // let arr = [];
+    // for (i = 1; i < 51; i++) {
+    //     arr.push(i * 2);
+    // }
+    // console.log(arr)
+
+    // 2. заповнити його 50 непарними числами за допомоги циклу.
+    // let arr = [];
+    // for (i = 1; i < 51; i++) {
+    //     arr.push(i * 2 + 1);
+    // }
+    // console.log(arr)
+
+    // 3. используя Math.random заполнить массив из ???(сколько хотите) элементов.
+    //  диапазон рандома 8 до 732. (но сначала пробуйте БЕЗ ДИАПАЗОНА!)
+    // let arr = [],
+    //     min = 8,
+    //     max = 732;
+    // for (i = 1; i < 51; i++) {
+    //     arr.push(Math.floor(Math.random() * (max - min + 1) + min));
+    // }
+    // console.log(arr)
+
+    //  2. вывести на консоль  каждый третий елемент
+    // let arr = [];
+    // for (i = 1; i < 51; i++) {
+    //     arr.push(i * 2 + 1);
+    // }
+    // for (let j = 0; j < arr.length; j = j + 3) {
+    //     console.log(arr[j])
+    // }
+
+    //  3. вывести на консоль  каждый третий елемент
+    //  но при условии что его значение является парным.
+    // let arr = [];
+    // min = 8,
+    //     max = 732;
+    // for (i = 1; i < 51; i++) {
+    //     arr.push(i * 2 + (Math.floor(Math.random() * (max - min + 1) + min)));
+    // }
+    // for (let j = 0; j < arr.length; j = j + 3) {
+    //     if (arr[j] % 2 == 0) {
+    //         console.log(arr[j])
+    //     }
+    // }
+
+    //  4. вывести на консоль  каждый третий елемент
+    //  но при условии что он имеет парное значение и
+    //  записать их в другой массив.
+    // let arr = [];
+    // min = 8,
+    //     max = 732,
+    //     arrNew = [];
+    // for (i = 1; i < 51; i++) {
+    //     arr.push(i * 2 + (Math.floor(Math.random() * (max - min + 1) + min)));
+    // }
+    // for (let j = 0; j < arr.length; j = j + 3) {
+    //     if (arr[j] % 2 == 0) {
+    //         arrNew.push(arr[j]);
+    //     }
+    // }
+    // console.log(arrNew);
+
+    //  5. Вывести каждый елемент массива у которого соседний с права элемент - парный
+    // let arr = [];
+    // min = 8,
+    //     max = 732,
+    //     arrNew = [];
+    // for (i = 1; i < 51; i++) {
+    //     arr.push(i * 2 + (Math.floor(Math.random() * (max - min + 1) + min)));
+    // }
+    // for (let j = 0; j < arr.length; j = j + 3) {
+    //     if (arr[j + 1] % 2 == 0) {
+    //         arrNew.push(arr[j]);
+    //     }
+    // }
+    // console.log(arrNew);
+
+    //   5 масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. обрахувати середній чек.
+    // let arr = [100, 250, 50, 168, 120, 345, 188];
+    // let sum = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     sum += arr[i];
+    // }
+    // document.write(sum);
+
+
+    // 3 створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
+    // let arr = [];
+    // min = 8, max = 53, arrNew = [];
+    // for (i = 1; i < 33; i++) {
+    //     arr.push(i * 2 + (Math.floor(Math.random() * (max - min + 1) + min)));
+    // }
+    // for (let j = 0; j < arr.length; j++) {
+    //     arrNew.push(arr[j] * 5);
+    // }
+    // console.log(arrNew);
+
+    // 4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
+    //  додати його в інший масив.
+    // let arr = [];
+    // min = 8, max = 53, arrNew = [];
+    // for (i = 1; i < 33; i++) {
+    //     arr.push(i * 2 + (Math.floor(Math.random() * (max - min + 1) + min)));
+    // }
+    // for (i = 0; i < arr.length; i++) {
+    //     if (arr[i] % 3 == 0) {
+    //         arr.splice(i, 1, 'okten')
+    //     }
+    // }
+    // for (let j = 0; j < arr.length; j++) {
+    //     if ((arr[j]) / 2) {
+    //         arrNew.push(arr[j]);
+    //     }
+    // }
+    // console.log(arr);
+    // console.log(arrNew);
+
+
+</script>
+
+</html>
