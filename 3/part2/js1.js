@@ -1,24 +1,24 @@
 // task 1
 // - создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей.
 // (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
-// let human1 = [
+//  let human1 = [
 //     {type : 'human', race :'chines', vik : 23, vaga : 70, stat : 'men', stan : 'marid'},
-//     {type : 'car', marka : 'mercedes', kolir : 'black', paluvo : 'benzin', pruvid : '4x4', kuzov : 'jeep'},
-//     {type : 'apartment', area : 47, flor : 3, rooms : 2, bedroom :1, balkon : true},
-//     {type :'dog', poroda : 'dvornyaga', kolir : 'Jovtuy', vik : 2, vaga : 10, hvist : true},
+//      {type : 'car', marka : 'mercedes', kolir : 'black', paluvo : 'benzin', pruvid : '4x4', kuzov : 'jeep'},
+//      {type : 'apartment', area : 47, flor : 3, rooms : 2, bedroom :1, balkon : true},
+//      {type :'dog', poroda : 'dvornyaga', kolir : 'Jovtuy', vik : 2, vaga : 10, hvist : true},
 //     {type :'book', autor : 'tolkien', pages : 983, janr : 'fentasy', tom : 1, rikVupysky : 2020}];
 
 // task 2
 //создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект.
 // Опишите что угодно, машину, картину, болт... Пример :
 // let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
-// let user1 = [
+//  let user1 = [
 //     {name : 'misko', valu1 : ['mp5','ar15'], valu2:{marca:'mers', rik: 2010}},
-//     {name : 'petro', valu3 : ['mp5','ar15'], valu4:{marca:'mers', rik: 2010}},
-//     {name : 'andriy', valu5 : ['mp5','ar15'], valu6 :{marca:'mers', rik: 2010}},
-//     {name : 'yra', valu7 : ['mp5','ar15'], valu8 :{marca:'mers', rik: 2010}},
-//     {name : 'anton', valu9 : ['mp5','ar15'], valu10 :{marca:'mers', rik: 2010}}
-//     ];
+//      {name : 'petro', valu3 : ['mp5','ar15'], valu4:{marca:'mers', rik: 2010}},
+//      {name : 'andriy', valu5 : ['mp5','ar15'], valu6 :{marca:'mers', rik: 2010}},
+//      {name : 'yra', valu7 : ['mp5','ar15'], valu8 :{marca:'mers', rik: 2010}},
+//      {name : 'anton', valu9 : ['mp5','ar15'], valu10 :{marca:'mers', rik: 2010}}
+//      ];
 
 //task 3
 //При помощи for in вывести все ключи всех объектов из задания 1 и 2
@@ -30,14 +30,14 @@
 //task 4
 //При помощи Object.keys вывести все ключи всех объектов из задания 1 и 2
 // let arr = [human1, user1];
-// for (const element of arr){
-//     console.log(element);
+//  for (const element of arr){
+//      console.log(element);
 //     console.log(Object.keys(element));
-//     for (const arrKey in element) {
-//         let xxx = Object.keys(arrKey);
-//         console.log(element[arrKey]);
-//     }
-// }
+//      for (const arrKey in element) {
+//          let xxx = Object.keys(arrKey);
+//          console.log(element[arrKey]);
+//      }
+//  }
 
 //task 5
 //Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет.
@@ -209,7 +209,121 @@
 // }
 // console.log(newArr1);
 
+//task 18
+//- За допомогою 2х циклів циклів проітеррувати  даний масив і масив кожного об'єкта.
+// let users = [
+//     {name: 'vasya', age: 31, status: false, skills: ['java', 'js']},
+//     {name: 'petya', age: 30, status: true, skills: ['java', 'js', 'html']},
+//     {name: 'kolya', age: 29, status: true, skills: ['mysql', ',mongo']},
+//     {name: 'olya', age: 28, status: false, skills: ['java', 'js']},
+//     {name: 'max', age: 30, status: true, skills: ['mysql', ',mongo']}];
+// for (const user of users) {
+//     console.log(user);
+//     for (const userElement of user.skills) {
+//         console.log(userElement);
+//     }
+// }
 
+// let users = [
+//     {name: 'vasya', age: 31, status: false, address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}},
+//     {name: 'petya', age: 30, status: true, address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}},
+//     {name: 'kolya', age: 29, status: true, address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}},
+//     {name: 'olya', age: 28, status: false, address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}},
+//     {name: 'max', age: 30, status: true, address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}},
+//     {name: 'anya', age: 31, status: false, address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}},
+//     {name: 'oleg', age: 28, status: false, address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}},
+//     {name: 'andrey', age: 29, status: true, address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}},
+//     {name: 'masha', age: 30, status: true, address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}},
+//     {name: 'olya', age: 31, status: false, address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}},
+//     {name: 'max', age: 31, status: true, address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}}
+//     ];
 
+//task 19
+//З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
+// let newArr12 = [];
+// for (const user of users) {
+//     newArr12.push(user.address);
+// }
 
+//task 20
+//За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
+// Всі данні в одному блоці.
+// let contUsers = document.getElementById('content');
+// for (const user of users) {
+//     let userBox = document.createElement("div");
+//     let userKey1 = document.createElement('h1');
+//     userKey1.innerText = `${user.name}`;
+//     userBox.appendChild(userKey1);
+//     let userKey2 = document.createElement('p');
+//     userKey2.innerText = `age: ${user.age}`;
+//     userBox.appendChild(userKey2);
+//     let userKey3 = document.createElement('p');
+//     userKey3.innerText = `status: ${user.status}`;
+//     userBox.appendChild(userKey3);
+//     let userKey4 = document.createElement('p');
+//     for (let [key, value] of Object.entries(user.address)) {
+//     userKey4.innerText += `${key}:${value}; `;
+//     userBox.appendChild(userKey4);
+//     }
+//     contUsers.appendChild(userBox);
+// }
 
+//task 21
+// За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
+// розділивши всі властивості по своїм блокам (div>div*4)
+// let contUsers = document.getElementById('content');
+// for (const user of users) {
+//     let userBox = document.createElement("div");
+//     let userKey1 = document.createElement('div');
+//     userKey1.innerText = `${user.name}`;
+//     userBox.appendChild(userKey1);
+//     let userKey2 = document.createElement('div');
+//     userKey2.innerText = `age: ${user.age}`;
+//     userBox.appendChild(userKey2);
+//     let userKey3 = document.createElement('div');
+//     userKey3.innerText = `status: ${user.status}`;
+//     userBox.appendChild(userKey3);
+//     let userKey4 = document.createElement('div');
+//     for (let [key, value] of Object.entries(user.address)) {
+//     userKey4.innerText += `${key}:${value}; `;
+//     userBox.appendChild(userKey4);
+//     }
+//     contUsers.appendChild(userBox);
+// }
+
+//task 22
+// За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
+// розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
+// let contUsers = document.getElementById('content');
+// for (const user of users) {
+//     let userBox = document.createElement("div");
+//     let userKey1 = document.createElement('h1');
+//     userKey1.innerText = `${user.name}`;
+//     userBox.appendChild(userKey1);
+//     let userKey2 = document.createElement('p');
+//     userKey2.innerText = `age: ${user.age}`;
+//     userBox.appendChild(userKey2);
+//     let userKey3 = document.createElement('p');
+//     userKey3.innerText = `status: ${user.status}`;
+//     userBox.appendChild(userKey3);
+//     let userKey4 = document.createElement('div');
+//     for (let [key, value] of Object.entries(user.address)) {
+//     let adressValue = document.createElement('p')
+//         adressValue.innerText += `${key}:${value}; `;
+//         userKey4.appendChild(adressValue);
+//         userBox.appendChild(userKey4);
+//     }
+//     contUsers.appendChild(userBox);
+// }
+
+//task 23
+//З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
+// Записати цей об'єкт в новий масив
+// Частковий приклад реультату:
+// let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
+
+let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true},
+    {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
+let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+    {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
+let usersWithCities =
