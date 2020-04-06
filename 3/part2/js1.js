@@ -414,14 +414,92 @@
 // створити скрипт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li),
 // який буде змістом того, що знаходиться на сторінці.
 // Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
-let warpContent = document.getElementsByTagName('h2'),
-    contList = document.getElementById('content'),
-    ulList = document.createElement('ul');
-for (const listH2 of warpContent) {
-    let addLi = document.createElement('li');
-    addLi.innerHTML = listH2;
-    console.log(listH2);
-    ulList.appendChild(addLi);
-}
-contList.appendChild(ulList);
+// let warpContent = document.getElementsByTagName('h2'),
+//     contList = document.getElementById('content'),
+//     ulList = document.createElement('ul');
+// for (const listH2 of warpContent) {
+//     let addLi = document.createElement('li');
+//     addLi.innerHTML = listH2.innerHTML;
+//     console.log(listH2);
+//     ulList.appendChild(addLi);
+// }
+// contList.appendChild(ulList);
 
+//task 29
+//-Є масив котрий характеризує правила.
+// Створити скрипт який ітерує цей масив,та робить з кожне правило в окремому блоці.
+// При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
+// Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
+// 			let rules = [
+// 				{
+// 					title: 'Первое правило Бойцовского клуба.',
+// 					body: 'Никому не рассказывать о Бойцовском клубе.'
+// 				},
+// 				{
+// 					title: 'Второе правило Бойцовского клуба.',
+// 					body: 'Никогда никому не рассказывать о Бойцовском клубе.'
+// 				},
+// 				{
+// 					title: 'Третье правило Бойцовского клуба.',
+// 					body: 'В схватке участвуют только двое.'
+// 				},
+// 				{
+// 					title: 'Четвертое правило Бойцовского клуба.',
+// 					body: 'Не более одного поединка за один раз.'
+// 				},
+// 				{
+// 					title: 'Пятое правило Бойцовского клуба.',
+// 					body: 'Бойцы сражаются без обуви и голые по пояс.'
+// 				},
+// 				{
+// 					title: 'Шестое правило Бойцовского клуба.',
+// 					body: 'Поединок продолжается столько, сколько потребуется.'
+// 				},
+// 				{
+// 					title: 'Седьмое правило Бойцовского клуба.',
+// 					body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
+// 				},
+// 				{
+// 					title: 'Восьмое и последнее правило Бойцовского клуба.',
+// 					body: 'Новичок обязан принять бой.'
+// 				},
+//
+// 			];
+// let wrapContainer = document.getElementById('wrap');
+// for (let i=0; i<=rules.length;i++){
+//     let rule = rules[i],
+//         divElement = document.createElement('div'),
+//         h2Element = document.createElement('h2'),
+//         pElement = document.createElement('p');
+//     h2Element.innerText = rule.title;
+//     divElement.appendChild(h2Element);
+//     pElement.innerText = rule.body;
+//     divElement.appendChild(pElement);
+//     divElement.classList.add('rules', `rule${i+1}`);
+//     wrapContainer.appendChild(divElement);
+// }
+//--------------------------
+
+//***
+// за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі users.
+// За допомогою document.createElement вивести їх в браузер.
+// Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт в свій блок (блок в блоці).
+
+
+//***
+// за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts.
+// За допомогою document.createElement вивести їх в браузер.
+// Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
+
+
+//***
+// за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі comments.
+// За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок,
+// при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
+
+
+//******
+// при помощи fetch (как в примере) получить от jsonplaceholder все posts.
+// Внутри последнего then() сделать еще один fetch который сделает запрос и получит все comments.
+// Объеденить соответсвующий post с соответсвующими comment и вывести в браузер.
+// Подсказка : в каждом comment есть поле postId которое определяет какой комментарий принадлежит какому посту
