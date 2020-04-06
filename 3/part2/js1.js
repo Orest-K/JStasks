@@ -321,9 +321,107 @@
 // Записати цей об'єкт в новий масив
 // Частковий приклад реультату:
 // let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
+// let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true},
+//     {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
+// let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+//     {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
+// for (const user of usersWithId) {
+//     for (const city of citiesWithId) {
+//         if(user.id === city.user_id){
+//             user.address = city;
+//         }
+//     }
+// }
 
-let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true},
-    {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
-let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
-    {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
-let usersWithCities =
+//task 24
+//створити розмітці блок з id, class та текстом в середені.
+// Зчитати окремо цей текст з селекторів по id , class та тегу
+// let wrapContent = document.getElementsByClassName('rules');
+// for (let element of wrapContent) {
+//     console.log(element);
+// }
+
+//task 25
+//змінити цей текст використовуючи селектори id, class,  tag
+// - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+// let wrapContent = document.getElementsByTagName('h2');
+// for (let element of wrapContent) {
+//     element.innerText = 'Some text h2';
+// };
+// let styleElement = document.getElementById('content');
+// styleElement.style.height = '30px';
+
+//task 25
+// - за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
+// let table1 = document.getElementById('custumContent');
+// table1.innerHTML = '<table><tr><td>a</td><td>a</td><td>a</td></tr></table>';
+
+//task 26
+// - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків
+// з трьома ячейками всередені
+// let contentTable1 = document.getElementById('custumContent');
+// let table = document.createElement('table');
+// for (let i = 0; i <= 10; i++) {
+//     let trTab = document.createElement('tr');
+//     trTab.innerHTML = '<td></td><td></td><td></td>';
+//     table.appendChild(trTab);
+// }
+// contentTable1.appendChild(table);
+
+//task 27
+// - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків
+// з 5 ячейками всередені
+// let contentTable1 = document.getElementById('custumContent');
+// let table = document.createElement('table');
+// for (let i = 1; i <= 10; i++) {
+//     let trTab = document.createElement('tr');
+//     for (let j = 1; j <=5; j++) {
+//         let tdTab = document.createElement('td');
+//         tdTab.style.padding = '10px';
+//         tdTab.style.backgroundColor = '#222329';
+//         tdTab.style.color = 'white';
+//         tdTab.innerText = 'custum text, or variable';
+//         trTab.appendChild(tdTab);
+//     }
+//     table.appendChild(trTab);
+// }
+// contentTable1.appendChild(table);
+
+//task 28
+// - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків
+// з m ячейками всередені. n та m отримати з prompt
+// let contentTable1 = document.getElementById('custumContent');
+// let trNumber = +prompt('Enter tr number'),
+//     tdNumber = +prompt('Enter td number');
+// let table = document.createElement('table');
+// for (let i = 1; i <= trNumber; i++) {
+//     let trTab = document.createElement('tr');
+//     for (let j = 1; j <=tdNumber; j++) {
+//         let tdTab = document.createElement('td');
+//         tdTab.style.padding = '10px';
+//         tdTab.style.backgroundColor = '#222329';
+//         tdTab.style.color = 'white';
+//         tdTab.innerText = 'custum text, or variable';
+//         trTab.appendChild(tdTab);
+//     }
+//     table.appendChild(trTab);
+// }
+// contentTable1.appendChild(table);
+
+//task 29
+//- є сторінка rules.html. Контентом сторінки є заголовки та параграфи.
+// Заголовки (h2) характеризують тему контенту яка вказана в параграфі.
+// створити скрипт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li),
+// який буде змістом того, що знаходиться на сторінці.
+// Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
+let warpContent = document.getElementsByTagName('h2'),
+    contList = document.getElementById('content'),
+    ulList = document.createElement('ul');
+for (const listH2 of warpContent) {
+    let addLi = document.createElement('li');
+    addLi.innerHTML = listH2;
+    console.log(listH2);
+    ulList.appendChild(addLi);
+}
+contList.appendChild(ulList);
+
