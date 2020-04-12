@@ -8,6 +8,7 @@
 //      {type :'dog', poroda : 'dvornyaga', kolir : 'Jovtuy', vik : 2, vaga : 10, hvist : true},
 //     {type :'book', autor : 'tolkien', pages : 983, janr : 'fentasy', tom : 1, rikVupysky : 2020}];
 
+
 // task 2
 //создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект.
 // Опишите что угодно, машину, картину, болт... Пример :

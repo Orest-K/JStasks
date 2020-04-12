@@ -15,6 +15,7 @@
 // for (let item of rules){
 //     item.style.color='red';}
 
+
 // рішення 2 завдання
 // let headElement = document.getElementById('main_header');
 // headElement.style.color='green';
