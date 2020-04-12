@@ -6,16 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>js home 7</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+
+    </style>
 </head>
 <body>
+<button id="text" class="btn" onclick="displayNone('text')">Click Me!</button>
+<label for="inputOld">Enter your age</label>
+<input type="text" id="inputOld" name="old"><input type="submit" id="submitForOld" onclick="checkAge()">
+<div class="dropDown">
+  <button onclick="myDropFunc()" class="dropBtn">List</button>
+  <div id="myDrop" class="dropList">
+    <a href="#">Link1</a>
+    <a href="#">Link2</a>
+    <a href="#">Link3</a>
+  </div>
+</div>
 
 
-<script>
-//Task 1
-//- Создать произвольный елемент с id = text.
-// Используя JavaScript, сделайте так, чтобы при клике на кнопку исчезал элемент с id="text".
-
-    
-</script>
+<script src="js.js"></script>
 </body>
 </html>
