@@ -30,7 +30,7 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};
 
 // Task 4
 //- Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.

@@ -37,3 +37,6 @@
 }
 .dropDown a:hover {background-color: #ddd;}
 .show {display: block;}
+.t-c{
+  text-align: center;
+}
