@@ -2,7 +2,7 @@
 //- Создать произвольный елемент с id = text.
 // Используя JavaScript, сделайте так, чтобы при клике на кнопку исчезал элемент с id="text".
 //- Создайте кнопку, при клике на которую, она будет скрывать сама себя.
-const displayNone = (idElement) =>{document.getElementById(idElement).style.display = "none";}
+const displayNone = (idElement) =>{document.getElementById(idElement).style.display = "none";};
 
 //Task 2
 //- створити інпут який приймає вік людини та кнопку яка підтверджує дію.
@@ -15,7 +15,7 @@ const checkAge = () =>{
     }else if(years <18){
         alert('Come later вам ще не виповнилось 18');
     }
-}
+};
 
 //Task 3
 //Создайте меню, которое раскрывается/сворачивается при клике
