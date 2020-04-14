@@ -8,23 +8,23 @@ const displayNone = (idElement) =>{document.getElementById(idElement).style.disp
 //- створити інпут який приймає вік людини та кнопку яка підтверджує дію.
 // При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18,
 // та повідомити про це користувача
-// const checkAge = () =>{
-//     let years = document.getElementById('inputOld').value;
-//     if(years >= 18){
-//         alert('Welcome вам більше 18 років')
-//     }else if(years <18){
-//         alert('Come later вам ще не виповнилось 18')
-//     }
-// }
+const checkAge = () =>{
+    let years = document.getElementById('inputOld').value;
+    if(years >= 18){
+        alert('Welcome вам більше 18 років');
+    }else if(years <18){
+        alert('Come later вам ще не виповнилось 18');
+    }
+}
 
 //Task 3
 //Создайте меню, которое раскрывается/сворачивается при клике
 const myDropFunc = () => {document.getElementById("myDrop").classList.toggle("show");};
 window.onclick = function(event) {
   if (!event.target.matches('.dropBtn')) {
-    const dropdowns = document.getElementsByClassName("dropList");
-    for (let i = 0; i < dropdowns.length; i++) {
-      const openDropdown = dropdowns[i];
+    const dropDowns = document.getElementsByClassName("dropList");
+    for (let i = 0; i < dropDowns.length; i++) {
+      const openDropdown = dropDowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
@@ -37,5 +37,9 @@ window.onclick = function(event) {
 // Вывести список комментариев в документ, каждый в своем блоке.
 //  Добавьте каждому комментарию по кнопке для сворачивания его body.
 
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((revius) => {return revius.json()})
+    .then(reviusJSON => {
 
 
+    });

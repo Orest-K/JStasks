@@ -40,3 +40,7 @@
 .t-c{
   text-align: center;
 }
+#reviusBlock{
+  display: flex;
+  flex-wrap: wrap;
+}
