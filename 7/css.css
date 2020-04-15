@@ -44,3 +44,16 @@
   display: flex;
   flex-wrap: wrap;
 }
+.forms{
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.forms input{
+  margin: 10px;
+  border: 1px solid dodgerblue;
+  height: 20px;
+}
+.form{
+  margin: 20px;
+}
