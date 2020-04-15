@@ -40,6 +40,50 @@ window.onclick = function(event) {
 fetch('https://jsonplaceholder.typicode.com/posts')
     .then((revius) => {return revius.json()})
     .then(reviusJSON => {
+        const bodyRevu= document.getElementById('reviusBlock');
+        for (const reviu of reviusJSON) {
+            const {title, body,id} = reviu;
+            const frame = document.createElement('div'),
+                revTitle = document.createElement('h3'),
+                btnMore = document.createElement('button'),
+                revBody = document.createElement('p'),
+                btnLess = document.createElement('button');
+            revTitle.innerText = title;
+            revTitle.style.textAlign='center';
+            frame.appendChild(revTitle);
+            btnMore.innerText = 'Read more';
+            btnMore.setAttribute('id',`btnmore${id}`);
+            btnMore.setAttribute('onclick',showMore(`btnmore${id}`,`revbody${id}`,`btnless${id}`));
+            frame.appendChild(btnMore);
+            revBody.innerText = body;
+            revBody.setAttribute('id',`revbody${id}`);
+            revBody.style.display ='none';
+            frame.appendChild(revBody);
+            btnLess.innerText = 'Less';
+            btnLess.setAttribute('id',`btnless${id}`);
+            btnLess.style.display ='none';
+            btnLess.onclick = showLess(`btnmore${id}`,`revbody${id}`,`btnless${id}`);
+            frame.appendChild(btnLess);
+            frame.style.width = '300px';
+            frame.style.margin ='20px';
+            frame.style.padding = '15px';
+            frame.style.borderColor = 'black';
+            frame.style.borderStyle = 'solid';
+            frame.style.borderWidth = '2px';
+            bodyRevu.appendChild(frame);
 
+        }
 
     });
+function showMore (btnmore,revbody,btnless){
+    document.getElementById(revbody).style.display = 'block';
+    document.getElementById(btnless).style.display = 'block';
+    const redMorre = document.getElementById(btnmore);
+    redMorre.style.display ='none';
+}
+showLess = (btnmore,revbody,btnless) =>{
+    const redMoree = document.getElementById(btnmore);
+    redMoree.style.display ='block';
+    document.getElementById(revbody).style.display = 'none';
+    document.getElementById(btnless).style.display = 'none';
+};
