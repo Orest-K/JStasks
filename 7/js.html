@@ -32,11 +32,16 @@
 <hr>
 <!--Task 4-->
 <h2 class="t-c">Revius</h2>
+<button id="showRes" onclick="showHide('showRes','resultBlock')">Show result</button>
+<div id="resultBlock">
 <div id="reviusBlock">
-</div>
+</div></div>
 <!--   -->
 <hr>
 <!--Task 5-->
+<h2 class="t-c">Forms</h2>
+<button id="showRes1" onclick="showHide('showRes1','resultBlock1')">Show result</button>
+<div id="resultBlock1">
 <div class="forms">
     <div class="form">
         <form action="" name="form1">
@@ -54,12 +59,37 @@
         </form>
         <button id="buttonForm2" onclick="getInfo2()">Get info</button>
     </div>
-</div>
+</div></div>
 <!--    -->
 <hr>
 <!--Task 6-7 -->
+<h2 class="t-c">Table create</h2>
+<button id="showRes2" onclick="showHide('showRes2','resultBlock2')">Show result</button>
+<div id="resultBlock2">
+    <div class="form">
+        <form action="" name="form1">
+            <lable for="TrValue">Value of Tr</lable><br>
+            <input type="number" id="TrValue">
+            <br>
+            <lable for="TdValue">Value of Td</lable><br>
+            <input type="number" id="TdValue">
+             <br>
+            <lable for="QerySelector">Element id</lable><br>
+            <input type="text" id="QerySelector" name="QerySelector" value="tablePlace">
+        </form>
+        <input type="submit" value="Create table" onclick="tableCreate('TrValue','TdValue','QerySelector')">
+    </div>
+<div id="tablePlace"></div></div>
+<!--    -->
+<hr>
+<!--Task 8 -->
+<h2 class="t-c">Slider</h2>
+<button id="showRes3" onclick="showHide('showRes3','resultBlock3')">Show result</button>
+<div id="resultBlock3">
 
-
+</div>
+<!--    -->
+<hr>
 <script src="js.js"></script>
 </body>
 </html>
