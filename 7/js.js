@@ -149,3 +149,4 @@ let formBlock = document.createElement('div');
     newForm.appendChild(document.createElement('br'));
     newForm.appendChild(document.createElement('input'))
 formBlock.appendChild(newForm);
+
