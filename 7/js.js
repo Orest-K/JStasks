@@ -150,3 +150,44 @@ let formBlock = document.createElement('div');
     newForm.appendChild(document.createElement('input'))
 formBlock.appendChild(newForm);
 
+// Task 8
+// Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
+let imgArr = [
+    {id:1,
+    url: 'https://meblimarko.com/wp-content/uploads/2020/04/DSC_0242-HDR.jpg'},
+    {id:2,
+    url: 'https://meblimarko.com/wp-content/uploads/2020/03/DSC_0219.jpg'},
+    {id:3,
+    url: 'https://meblimarko.com/wp-content/uploads/2020/03/DSC_0193.jpg'},
+    {id:4,
+    url: 'https://meblimarko.com/wp-content/uploads/2020/03/DSC_0606-min.jpg'}
+];
+const imageSlider = document.getElementById('imageBlock'),
+    btnPerv = document.getElementById('previus'),
+    btnNext = document.getElementById('next');
+let curenImg = 0;
+imageSlider.src = imgArr[curenImg].url;
+btnPerv.onclick = () =>{
+    curenImg - 1 < 0
+    ? curenImg = imgArr.length - 1
+    : curenImg = curenImg - 1
+    imageSlider.src = imgArr[curenImg].url
+}
+btnNext.onclick = () =>{
+    curenImg + 1 < imgArr.length - 1
+    ? curenImg = 0
+    : curenImg = curenImg + 1
+    imageSlider.src = imgArr[curenImg].url
+}
+
+// Task 9
+//- Сворити масив не цензцрних слів.
+// Сворити інпут текстового типу.
+// Якщо людина вводить слово і воно міститься в масиві не цензурних слів
+// кинути алерт з попередженням.
+// Перевірку робити при натисканні на кнопку
+let masCenz = ['fuck', 'sheat'];
+checkCenzor = () =>{
+
+}
+

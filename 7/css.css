@@ -63,4 +63,10 @@ hr{
 #resultBlock, #resultBlock1, #resultBlock2, #resultBlock3,
 #resultBlock4, #resultBlock5, #resultBlock6{
   display: none;
+  margin: 50px auto;
+}
+#imageBlock{
+  width: 900px;
+  height: auto;
+  border: 2px solid coral;
 }
