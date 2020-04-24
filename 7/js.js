@@ -188,6 +188,8 @@ btnNext.onclick = () =>{
 // Перевірку робити при натисканні на кнопку
 let masCenz = ['fuck', 'sheat'];
 checkCenzor = () =>{
+const stringValues = document.getElementById('getMat').value.split(' ');
 
+    console.log(stringValues);
 }
 
